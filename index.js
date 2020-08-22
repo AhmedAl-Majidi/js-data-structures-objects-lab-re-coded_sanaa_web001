@@ -19,3 +19,9 @@ function deleteFromDriverByKey(driver, key) {
     return newObj;
 }
 deleteFromDriverByKey(driver,"name");
+
+function deleteFromDriverByKey(driver, key) {
+    Object.assign({},driver);
+    delete driver[`${key}`];
+    return driver;
+}
