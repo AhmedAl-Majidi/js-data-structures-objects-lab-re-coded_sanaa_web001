@@ -18,4 +18,4 @@ function deleteFromDriverByKey(driver, key) {
     delete driver.key;
     return driver;
 }
-deleteFromDriverByKey(driver,"address");
+deleteFromDriverByKey(driver,"name");
